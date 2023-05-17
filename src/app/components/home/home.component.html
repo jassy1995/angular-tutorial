@@ -1,0 +1,7 @@
+<div class="flex justify-between h-46 border-b px-20 mb-4 py-4 shadow-sm transition-all">
+  <a [routerLink]="['/home']" routerLinkActive="active-link">User</a>
+  <button (click)="gotoProduct(1)">Go to product</button>
+  <a [routerLink]="['/home/product', {id:1}]" routerLinkActive="active-link">Product</a>
+</div>
+
+<router-outlet></router-outlet>
